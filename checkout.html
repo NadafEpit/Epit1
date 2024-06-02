@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>EPIT</title>
+</head>
+
+<body>
+
+<!-- Start Header/Navigation -->
+<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">EPIT<span>.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsFurni">
+            <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li><a class="nav-link" href="about.html">About us</a></li>
+                <li><a class="nav-link" href="shop.html">Shop</a></li>
+                <li><a class="nav-link" href="services.html">Services</a></li>
+                <li><a class="nav-link" href="contact.html">Contact us</a></li>
+            </ul>
+            <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                <li><a class="nav-link" href="#"><img src="images/user.svg"></a></li>
+                <li><a class="nav-link" href="cart.html"><img src="images/cart.svg"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Header/Navigation -->
+
+<!-- Start Hero Section -->
+<div class="hero">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-5">
+                <div class="intro-excerpt">
+                    <h1>Checkout</h1>
+                </div>
+            </div>
+            <div class="col-lg-7"></div>
+        </div>
+    </div>
+</div>
+<!-- End Hero Section -->
+
+<div class="untree_co-section">
+    <div class="container">
+        <div class="container checkout-container">
+            <div class="row">
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <h2 class="h3 mb-3 text-black">Billing Details</h2>
+                    <div class="p-3 p-lg-5 border bg-white">
+                        <form id="billingForm">
+                          <!-- <div class="form-group">
+                            <label for="c_country" class="text-black">Country <span class="text-danger">*</span></label>
+                            <select id="c_country" class="form-control" onchange="updateCheckbox()">
+                                <option value="1">Select a country</option>
+                                <option value="2">Bangladesh</option>
+                                <option value="3">Algeria</option>
+                                <option value="4">Afghanistan</option>
+                                <option value="5">Ghana</option>
+                                <option value="6">Albania</option>
+                                <option value="7">Bahrain</option>
+                                <option value="8">Colombia</option>
+                                <option value="9">Dominican Republic</option>
+                            </select>
+                        </div> -->
+                        <!-- <div class="form-group">
+                            <label for="countryCheckbox">Selected Country:</label>
+                            <input type="checkbox" id="countryCheckbox" disabled>
+                        </div> -->
+                            <div class="form-group row">
+                                <div class="col-md-6">
+                                    <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_fname" name="c_fname">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="c_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_lname" name="c_lname">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="c_companyname" class="text-black">Company Name</label>
+                                    <input type="text" class="form-control" id="c_companyname" name="c_companyname">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <label for="c_address" class="text-black">Address <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_address" name="c_address" placeholder="Street address">
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" placeholder="Apartment, suite, unit etc. (optional)">
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-6">
+                                    <label for="c_state_country" class="text-black">State / Country <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_state_country" name="c_state_country">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="c_postal_zip" class="text-black">Postal / Zip <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_postal_zip" name="c_postal_zip">
+                                </div>
+                            </div>
+                            <div class="form-group row mb-5">
+                                <div class="col-md-6">
+                                    <label for="c_email_address" class="text-black">Email Address <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_email_address" name="c_email_address">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="c_phone" class="text-black">Phone <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="c_phone" name="c_phone" placeholder="Phone Number">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            <h2 class="h3 mb-3 text-black">Coupon Code</h2>
+                            <div class="p-3 p-lg-5 border bg-white">
+                                <label for="c_code" class="text-black mb-3">Enter your coupon code if you have one</label>
+                                <div class="input-group w-75 couponcode-wrap">
+                                    <input type="text" class="form-control me-2" id="c_code" placeholder="Coupon Code" aria-label="Coupon Code" aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-black btn-sm" type="button" id="button-addon2">Apply</button>
+                                    </div>
+                                </div>
+                                <div id="couponResult" class="mt-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <h2 class="h3 mb-3 text-black">Your Order</h2>
+                    <div class="p-3 p-lg-5 border bg-white">
+                        <table class="table site-block-order-table mb-5">
+                            <thead>
+                                <th>Product</th>
+                                <th>Total</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Product 1 <strong class="mx-2">x</strong> 1</td>
+                                    <td id="product1-price">$49.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Product 2 <strong class="mx-2">x</strong> 1</td>
+                                    <td id="product2-price">$49.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-black font-weight-bold"><strong>Cart Subtotal</strong></td>
+                                    <td id="cart-subtotal">$98.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-black font-weight-bold"><strong>Discount</strong></td>
+                                    <td id="discount">$0.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-black font-weight-bold"><strong>Order Total</strong></td>
+                                    <td id="order-total">$98.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="border p-3 mb-3">
+                            <h3 class="h6 mb-0"><a class="d-block" data-bs-toggle="collapse" href="#directBankTransfer" role="button" aria-expanded="false" aria-controls="directBankTransfer">Direct Bank Transfer</a></h3>
+                            <div class="collapse" id="directBankTransfer">
+                                <div class="py-2">
+                                    <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border p-3 mb-3">
+                            <h3 class="h6 mb-0"><a class="d-block" data-bs-toggle="collapse" href="#paypal" role="button" aria-expanded="false" aria-controls="paypal">PayPal</a></h3>
+                            <div class="collapse" id="paypal">
+                                <div class="py-2">
+                                    <p class="mb-0">Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border p-3 mb-5">
+                            <h3 class="h6 mb-0"><a class="d-block" data-bs-toggle="collapse" href="#chequePayment" role="button" aria-expanded="false" aria-controls="chequePayment">Cheque Payment</a></h3>
+                            <div class="collapse" id="chequePayment">
+                                <div class="py-2">
+                                    <p class="mb-0">Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="qrCodeContainer" class="mb-3"></div>
+                        <div class="form-group">
+                            <button class="btn btn-black btn-lg py-3 btn-block" id="placeOrderButton">Place Order</button>
+                        </div>
+                        <div id="paymentResult"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
+
+<script>
+// JavaScript to handle the checkout process
+
+document.addEventListener('DOMContentLoaded', function() {
+    const billingForm = document.getElementById('billingForm');
+    const placeOrderButton = document.getElementById('placeOrderButton');
+    const qrCodeCanvas = document.getElementById('qrCodeCanvas');
+    const paymentResult = document.getElementById('paymentResult');
+
+    // Load saved billing details from local storage
+    const savedBillingDetails = JSON.parse(localStorage.getItem('billingDetails'));
+    if (savedBillingDetails) {
+        for (let key in savedBillingDetails) {
+            if (billingForm.elements[key]) {
+                billingForm.elements[key].value = savedBillingDetails[key];
+            }
+        }
+    }
+
+    // Save billing details to local storage on form change
+    billingForm.addEventListener('change', function() {
+        const billingDetails = {};
+        Array.from(billingForm.elements).forEach(element => {
+            if (element.name) {
+                billingDetails[element.name] = element.value;
+            }
+        });
+        localStorage.setItem('billingDetails', JSON.stringify(billingDetails));
+    });
+
+    // Apply coupon and update totals
+    document.getElementById('button-addon2').addEventListener('click', function() {
+        const couponCode = document.getElementById('c_code').value;
+        const couponResult = document.getElementById('couponResult');
+        const cartSubtotal = parseFloat(document.getElementById('cart-subtotal').textContent.replace('$', ''));
+        let discount = 0;
+
+        if (couponCode === 'SAVE10') {
+            discount = cartSubtotal * 0.10;
+            couponResult.textContent = 'Coupon applied successfully!';
+        } else {
+            couponResult.textContent = 'Invalid coupon code.';
+        }
+
+        document.getElementById('discount').textContent = `$${discount.toFixed(2)}`;
+        const orderTotal = cartSubtotal - discount;
+        document.getElementById('order-total').textContent = `$${orderTotal.toFixed(2)}`;
+    });
+
+
+
+});
+
+
+</script>
+
+
+</body>
+</html>
